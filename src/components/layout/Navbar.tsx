@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
 import { MenuIcon, XIcon } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Button } from '../ui/Button';
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +19,7 @@ export const Navbar = () => {
     };
   }, [scrolled]);
   const navLinks = [{
-    name: 'Features',
+    name: 'Home',
     path: '/'
   }, {
     name: 'Endpoint',
@@ -47,7 +47,7 @@ export const Navbar = () => {
           <Link to="/" className="flex items-center">
             <div className="flex items-center">
               <span className="text-2xl font-bold bg-gradient-to-r from-[#29A8FF] to-[#6C63FF] text-transparent bg-clip-text font-montserrat">
-                Osto.one
+                Osto
               </span>
             </div>
           </Link>

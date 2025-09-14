@@ -1,7 +1,7 @@
 import React from 'react';
 import { Hero } from '../components/ui/Hero';
 import { Card } from '../components/ui/Card';
-import { CTABanner } from '../components/ui/CTABanner';
+//import { CTABanner } from '../components/ui/CTABanner';
 import { ShieldIcon, ShieldCheckIcon, ShieldXIcon, FileIcon } from 'lucide-react';
 const EndpointSecurity: React.FC = () => {
   return <div className="bg-[#0A0A12] text-white">
@@ -92,7 +92,7 @@ const EndpointSecurity: React.FC = () => {
             Real-World Use Cases
           </h2>
           <p className="text-[#B0B0B0] text-center mb-12 max-w-2xl mx-auto">
-            See how Osto.one's endpoint security protects businesses like yours.
+            See how Osto's endpoint security protects businesses like yours.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Card hover className="p-6">
@@ -103,13 +103,7 @@ const EndpointSecurity: React.FC = () => {
                 Prevent unauthorized file uploads to cloud services and sharing
                 platforms, protecting sensitive company data.
               </p>
-              <div className="bg-[#0A0A12] p-3 rounded-lg">
-                <p className="text-xs text-[#B0B0B0]">
-                  <span className="text-[#29A8FF]">Alert:</span> Blocked
-                  unauthorized upload of customer_data.xlsx to personal Dropbox
-                  account.
-                </p>
-              </div>
+              
             </Card>
             <Card hover className="p-6">
               <h3 className="text-xl font-bold font-montserrat mb-3">
@@ -119,13 +113,7 @@ const EndpointSecurity: React.FC = () => {
                 Automatically identify and protect personally identifiable
                 information across your endpoints.
               </p>
-              <div className="bg-[#0A0A12] p-3 rounded-lg">
-                <p className="text-xs text-[#B0B0B0]">
-                  <span className="text-[#29A8FF]">Alert:</span> Detected 47
-                  credit card numbers in unencrypted spreadsheet on marketing
-                  laptop.
-                </p>
-              </div>
+              
             </Card>
             <Card hover className="p-6">
               <h3 className="text-xl font-bold font-montserrat mb-3">
@@ -135,13 +123,7 @@ const EndpointSecurity: React.FC = () => {
                 Ensure compliance with company security policies across all
                 endpoints automatically.
               </p>
-              <div className="bg-[#0A0A12] p-3 rounded-lg">
-                <p className="text-xs text-[#B0B0B0]">
-                  <span className="text-[#29A8FF]">Action:</span> Enforced disk
-                  encryption on 23 devices out of compliance with security
-                  policy.
-                </p>
-              </div>
+              
             </Card>
           </div>
         </div>
@@ -153,7 +135,7 @@ const EndpointSecurity: React.FC = () => {
             Key Benefits
           </h2>
           <p className="text-[#B0B0B0] text-center mb-12 max-w-2xl mx-auto">
-            Why Osto.one's endpoint security stands above the rest.
+            Why Osto's endpoint security stands above the rest.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="text-center p-6">
@@ -211,8 +193,7 @@ const EndpointSecurity: React.FC = () => {
           </div>
         </div>
       </section>
-      {/* CTA Banner */}
-      <CTABanner title="Ready to secure your endpoints?" subtitle="Get started with Osto.one's endpoint security solution today." buttonText="Start Free Trial" buttonLink="/demo" />
+      
     </div>;
 };
 export default EndpointSecurity;

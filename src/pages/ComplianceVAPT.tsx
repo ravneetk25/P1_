@@ -1,12 +1,12 @@
 import React from 'react';
 import { Hero } from '../components/ui/Hero';
 import { Card } from '../components/ui/Card';
-import { CTABanner } from '../components/ui/CTABanner';
+//import { CTABanner } from '../components/ui/CTABanner';
 import { ClipboardCheckIcon, FileCheckIcon, ScanIcon, ShieldCheckIcon, FileIcon, CheckCircleIcon } from 'lucide-react';
 const ComplianceVAPT: React.FC = () => {
   return <div className="bg-[#0A0A12] text-white">
       {/* Hero Section */}
-      <Hero title="Simplify compliance. Strengthen resilience." subtitle="Automate security questionnaires, streamline compliance processes, and identify vulnerabilities before attackers do." primaryButtonText="Get Started" image="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?q=80&w=1000&auto=format&fit=crop" imageAlt="Compliance and security documentation" />
+      <Hero title="Simplify compliance. Strengthen resilience." subtitle="Automate security questionnaires, streamline compliance processes, and identify vulnerabilities before attackers do." primaryButtonText="Get Started" image="/images/compliance.jpeg" imageAlt="Compliance and security documentation" />
       {/* Security Questionnaire Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
@@ -80,10 +80,8 @@ const ComplianceVAPT: React.FC = () => {
                   </p>
                   <div className="bg-[#0A0A12] p-3 rounded border border-gray-800">
                     <p className="text-[#B0B0B0] text-sm">
-                      <span className="text-[#29A8FF] font-semibold">
-                        Auto-generated response:
-                      </span>{' '}
-                      Yes, Osto.one implements multi-factor authentication for
+                      
+                      Yes, Osto implements multi-factor authentication for
                       all user accounts across all systems and applications that
                       contain sensitive data. We support TOTP, SMS, and hardware
                       security keys.
@@ -96,10 +94,8 @@ const ComplianceVAPT: React.FC = () => {
                   </p>
                   <div className="bg-[#0A0A12] p-3 rounded border border-gray-800">
                     <p className="text-[#B0B0B0] text-sm">
-                      <span className="text-[#29A8FF] font-semibold">
-                        Auto-generated response:
-                      </span>{' '}
-                      Osto.one performs automated vulnerability scanning on a
+                     
+                      Osto performs automated vulnerability scanning on a
                       daily basis for critical systems and weekly for all other
                       systems. Full penetration tests are conducted quarterly by
                       an independent third party.
@@ -112,9 +108,7 @@ const ComplianceVAPT: React.FC = () => {
                   </p>
                   <div className="bg-[#0A0A12] p-3 rounded border border-gray-800">
                     <p className="text-[#B0B0B0] text-sm">
-                      <span className="text-[#29A8FF] font-semibold">
-                        Auto-generated response:
-                      </span>{' '}
+                     
                       All data is encrypted both in transit (TLS 1.3) and at
                       rest (AES-256). Encryption keys are managed through a
                       secure key management system with regular rotation and
@@ -475,8 +469,7 @@ const ComplianceVAPT: React.FC = () => {
           </div>
         </div>
       </section>
-      {/* CTA Banner */}
-      <CTABanner title="Ready to simplify your compliance journey?" subtitle="Get started with Osto.one's compliance and VAPT solutions today." buttonText="Request Demo" buttonLink="/demo" />
+      
     </div>;
 };
 export default ComplianceVAPT;

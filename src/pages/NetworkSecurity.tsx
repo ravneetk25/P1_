@@ -1,7 +1,7 @@
 import React from 'react';
 import { Hero } from '../components/ui/Hero';
 import { Card } from '../components/ui/Card';
-import { CTABanner } from '../components/ui/CTABanner';
+//import { CTABanner } from '../components/ui/CTABanner';
 import { NetworkIcon, ShieldCheckIcon, LineChartIcon, ActivityIcon, EyeIcon } from 'lucide-react';
 const NetworkSecurity: React.FC = () => {
   return <div className="bg-[#0A0A12] text-white">
@@ -94,7 +94,7 @@ const NetworkSecurity: React.FC = () => {
           </p>
           <div className="relative mx-auto max-w-4xl">
             <div className="absolute -inset-1 bg-gradient-to-r from-[#29A8FF] to-[#6C63FF] rounded-lg blur opacity-30"></div>
-            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1000&auto=format&fit=crop" alt="Network traffic analysis dashboard" className="relative rounded-lg w-full shadow-2xl" />
+            <img src="/images/traffic.jpeg" alt="Network traffic analysis dashboard" className="relative rounded-lg w-full shadow-2xl" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
             <div className="bg-[#13131f] p-6 rounded-lg">
@@ -137,7 +137,7 @@ const NetworkSecurity: React.FC = () => {
             Visualize your network topology and security status in real-time.
           </p>
           <div className="bg-[#13131f] p-6 rounded-lg relative mx-auto max-w-4xl">
-            <div className="aspect-w-16 aspect-h-9">
+            <div className="aspect-video">
               <div className="w-full h-full bg-[#0A0A12] rounded-lg p-4 relative">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center">
@@ -146,7 +146,7 @@ const NetworkSecurity: React.FC = () => {
                       Interactive network diagram visualization
                     </p>
                     <p className="text-[#B0B0B0] text-sm mt-2">
-                      (Hover over elements to see detailed information)
+                      
                     </p>
                   </div>
                 </div>
@@ -180,7 +180,7 @@ const NetworkSecurity: React.FC = () => {
             Key Benefits
           </h2>
           <p className="text-[#B0B0B0] text-center mb-12 max-w-2xl mx-auto">
-            Why Osto.one's network security solution is essential for your
+            Why Osto's network security solution is essential for your
             business.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -229,8 +229,7 @@ const NetworkSecurity: React.FC = () => {
           </div>
         </div>
       </section>
-      {/* CTA Banner */}
-      <CTABanner title="Secure your network infrastructure today" subtitle="Get started with Osto.one's network security solution." buttonText="Request Demo" buttonLink="/demo" />
+      
     </div>;
 };
 export default NetworkSecurity;

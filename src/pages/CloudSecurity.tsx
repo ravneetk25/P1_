@@ -1,8 +1,8 @@
-import React from 'react';
+//import React from 'react';
 import { Hero } from '../components/ui/Hero';
 import { Card } from '../components/ui/Card';
-import { CTABanner } from '../components/ui/CTABanner';
-import { CloudIcon, ShieldIcon, ScanIcon, ServerIcon, DatabaseIcon, BrainIcon } from 'lucide-react';
+//import { CTABanner } from '../components/ui/CTABanner';
+import { ServerIcon, ScanIcon, CloudIcon } from 'lucide-react';
 const CloudSecurity: React.FC = () => {
   return <div className="bg-[#0A0A12] text-white">
       {/* Hero Section */}
@@ -152,7 +152,7 @@ const CloudSecurity: React.FC = () => {
             Real-World Use Cases
           </h2>
           <p className="text-[#B0B0B0] text-center mb-12 max-w-2xl mx-auto">
-            See how Osto.one's cloud security helps startups secure their cloud
+            See how Osto's cloud security helps startups secure their cloud
             environments.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -161,31 +161,29 @@ const CloudSecurity: React.FC = () => {
                 SaaS Startup
               </h3>
               <p className="text-[#B0B0B0] mb-4">
-                A SaaS startup used Osto.one to secure their AWS environment and
+                A SaaS startup used Osto to secure their AWS environment and
                 customer data, achieving SOC 2 compliance in record time.
               </p>
               <div className="bg-[#0A0A12] p-3 rounded-lg">
-                <p className="text-xs text-[#B0B0B0]">
-                  <span className="text-[#29A8FF]">Results:</span> 47 critical
-                  misconfigurations fixed, 98% reduction in security findings,
-                  SOC 2 certification achieved in 4 weeks.
-                </p>
-              </div>
+            <p className="text-xs text-[#B0B0B0]">
+              Achieved 100% security coverage across all cloud endpoints and
+              reduced incident response time by 90% with automated workflows.
+            </p>
+            </div>
             </Card>
             <Card hover className="p-6">
               <h3 className="text-xl font-bold font-montserrat mb-3">
                 FinTech Platform
               </h3>
               <p className="text-[#B0B0B0] mb-4">
-                A financial technology company implemented Osto.one to protect
+                A financial technology company implemented Osto to protect
                 sensitive financial data and meet strict regulatory
                 requirements.
               </p>
               <div className="bg-[#0A0A12] p-3 rounded-lg">
                 <p className="text-xs text-[#B0B0B0]">
-                  <span className="text-[#29A8FF]">Results:</span> PCI-DSS
-                  compliance achieved, API attacks blocked, continuous security
-                  validation for all deployments.
+                    All endpoints secured, zero downtime in the last year, and 24/7 automated
+                    threat detection.
                 </p>
               </div>
             </Card>
@@ -254,8 +252,7 @@ const CloudSecurity: React.FC = () => {
           </div>
         </div>
       </section>
-      {/* CTA Banner */}
-      <CTABanner title="Secure your cloud infrastructure today" subtitle="Get started with Osto.one's cloud security solution." buttonText="Request Demo" buttonLink="/demo" />
+      
     </div>;
 };
 export default CloudSecurity;

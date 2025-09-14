@@ -2,19 +2,19 @@ import React from 'react';
 import { Hero } from '../components/ui/Hero';
 import { FeatureCard, SolutionCard } from '../components/ui/Card';
 import { CTABanner } from '../components/ui/CTABanner';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import { ShieldIcon, ClockIcon, BrainIcon, ShieldCheckIcon, FileCheckIcon, NetworkIcon, CloudIcon, ClipboardCheckIcon, ScanIcon, BotIcon, UserPlus2Icon, SettingsIcon, RocketIcon } from 'lucide-react';
 const Home: React.FC = () => {
   return <div className="bg-[#0A0A12] text-white">
       {/* Hero Section */}
-      <Hero title="Enterprise-Grade Cybersecurity for Startups — Live in 9 Minutes." subtitle="Protect your endpoints, networks, and cloud with AI-powered defense built for speed, scale, and compliance." primaryButtonText="Get Started" secondaryButtonText="Request Demo" image="https://images.unsplash.com/photo-1581092160607-cea11730eb71?q=80&w=1000&auto=format&fit=crop" imageAlt="Cybersecurity dashboard visualization" />
+      <Hero title="Rady To Secure Your Startup In Minutes ?" subtitle="Protect your endpoints, networks, and cloud with AI-powered defense built for speed, scale, and compliance." primaryButtonText="Get Started" secondaryButtonText="Request Demo" image="/images/home.jpg" imageAlt="Cybersecurity dashboard visualization" />
       {/* Value Proposition Section */}
       <section className="py-16 bg-[#0A0A12]">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold font-montserrat text-center mb-12">
             Why Choose{' '}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#29A8FF] to-[#6C63FF]">
-              Osto.one
+              Osto
             </span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -32,12 +32,11 @@ const Home: React.FC = () => {
             Trusted by Growing Startups
           </h2>
           <p className="text-[#B0B0B0] text-center mb-12 max-w-2xl mx-auto">
-            Join hundreds of innovative startups that trust Osto.one for their
+            Join hundreds of innovative startups that trust Osto for their
             cybersecurity needs.
           </p>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-70">
             <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Client logo" className="h-6 md:h-8" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Slack_icon.svg" alt="Client logo" className="h-8 md:h-10" />
             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Slack_icon_2019.svg" alt="Client logo" className="h-8 md:h-10" />
             <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="Client logo" className="h-6 md:h-8" />
             <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/GitLab_logo.svg" alt="Client logo" className="h-6 md:h-8" />
@@ -138,7 +137,7 @@ const Home: React.FC = () => {
         </div>
       </section>
       {/* CTA Banner */}
-      <CTABanner title="Ready to secure your startup in minutes?" subtitle="Join hundreds of startups already protected by Osto.one." buttonText="Start Free Trial" buttonLink="/demo" />
+      <CTABanner title="Ready to secure your startup in minutes?" subtitle="Join hundreds of startups already protected by Osto." buttonText="Start Free Trial" buttonLink="/demo" />
     </div>;
 };
 export default Home;

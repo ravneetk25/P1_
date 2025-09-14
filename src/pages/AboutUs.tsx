@@ -1,12 +1,16 @@
-import React from 'react';
+//import React from 'react';
 import { Hero } from '../components/ui/Hero';
 import { Card } from '../components/ui/Card';
-import { CTABanner } from '../components/ui/CTABanner';
+
+
+// Adjust path if component is in a different folder
+
+//import { CTABanner } from '../components/ui/CTABanner';
 import { LinkedinIcon, TwitterIcon, MailIcon, PhoneIcon, MapPinIcon } from 'lucide-react';
 const AboutUs: React.FC = () => {
   return <div className="bg-[#0A0A12] text-white">
       {/* Hero Section */}
-      <Hero title="Empowering startups with enterprise-grade security." subtitle="We're on a mission to make advanced cybersecurity accessible, affordable, and easy to implement for growing companies." backgroundPattern={true} />
+      <Hero title="Empowering startups with enterprise-grade security." subtitle="We're on a mission to make advanced cybersecurity accessible, affordable, and easy to implement for growing companies." image="/images/about.jpeg" backgroundPattern={true} />
       {/* Mission Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
@@ -15,7 +19,7 @@ const AboutUs: React.FC = () => {
               Our Mission
             </h2>
             <p className="text-lg text-[#B0B0B0] mb-8">
-              At Osto.one, we believe that every startup deserves
+              At Osto, we believe that every startup deserves
               enterprise-grade security, regardless of size or budget. Our
               mission is to democratize cybersecurity by making advanced
               protection accessible, affordable, and easy to implement for
@@ -40,10 +44,11 @@ const AboutUs: React.FC = () => {
               <div className="text-center">
                 <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4 relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-[#29A8FF]/20 to-[#6C63FF]/20 rounded-full"></div>
-                  <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=256&h=256&auto=format&fit=crop" alt="CEO" className="w-full h-full object-cover" />
+                  <img src="/images/ceo.jpeg" alt="CEO" className="w-full h-full object-cover" />
+
                 </div>
                 <h3 className="text-xl font-bold font-montserrat mb-1">
-                  Alex Rivera
+                  Karmesh Gupta
                 </h3>
                 <p className="text-[#29A8FF] text-sm mb-3">CEO & Founder</p>
                 <p className="text-[#B0B0B0] text-sm mb-4">
@@ -64,10 +69,11 @@ const AboutUs: React.FC = () => {
               <div className="text-center">
                 <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4 relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-[#29A8FF]/20 to-[#6C63FF]/20 rounded-full"></div>
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=256&h=256&auto=format&fit=crop" alt="CTO" className="w-full h-full object-cover" />
+                 <img src="/images/cto.jpeg" alt="CTO" className="w-full h-full object-cover" />
+
                 </div>
                 <h3 className="text-xl font-bold font-montserrat mb-1">
-                  Sarah Chen
+                  Praveen Gupta
                 </h3>
                 <p className="text-[#29A8FF] text-sm mb-3">CTO</p>
                 <p className="text-[#B0B0B0] text-sm mb-4">
@@ -88,13 +94,13 @@ const AboutUs: React.FC = () => {
               <div className="text-center">
                 <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4 relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-[#29A8FF]/20 to-[#6C63FF]/20 rounded-full"></div>
-                  <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=256&h=256&auto=format&fit=crop" alt="CSO" className="w-full h-full object-cover" />
+                  <img src="/images/senior.jpeg" alt="CSO" className="w-full h-full object-cover" />
                 </div>
                 <h3 className="text-xl font-bold font-montserrat mb-1">
-                  Michael Okonjo
+                  Minhaj Uddin
                 </h3>
                 <p className="text-[#29A8FF] text-sm mb-3">
-                  Chief Security Officer
+                  Senior Software Engineer
                 </p>
                 <p className="text-[#B0B0B0] text-sm mb-4">
                   Ethical hacker and security researcher with expertise in cloud
@@ -162,8 +168,8 @@ const AboutUs: React.FC = () => {
                 <h3 className="text-xl font-bold font-montserrat mb-2">
                   Email Us
                 </h3>
-                <a href="mailto:info@osto.one" className="text-[#B0B0B0] hover:text-[#29A8FF] transition-colors">
-                  info@osto.one
+                <a href="mailto:connect@osto.one" className="text-[#B0B0B0] hover:text-[#29A8FF] transition-colors">
+                 connect@osto.one
                 </a>
               </div>
             </Card>
@@ -175,8 +181,8 @@ const AboutUs: React.FC = () => {
                 <h3 className="text-xl font-bold font-montserrat mb-2">
                   Call Us
                 </h3>
-                <a href="tel:+11234567890" className="text-[#B0B0B0] hover:text-[#29A8FF] transition-colors">
-                  +1 (123) 456-7890
+                <a href="tel:+91 9119106555" className="text-[#B0B0B0] hover:text-[#29A8FF] transition-colors">
+                  +91 9119106555
                 </a>
               </div>
             </Card>
@@ -189,19 +195,18 @@ const AboutUs: React.FC = () => {
                   Visit Us
                 </h3>
                 <p className="text-[#B0B0B0]">
-                  123 Security Ave
+                  307, Wing-B, Raj Arcade CHS Ltd
                   <br />
-                  San Francisco, CA 94107
+                  Mahavir Nagar, Kandiwali (West), Maharashtra, 400067
                   <br />
-                  United States
+                  India
                 </p>
               </div>
             </Card>
           </div>
         </div>
       </section>
-      {/* CTA Banner */}
-      <CTABanner title="Ready to secure your startup?" buttonText="Get Started" buttonLink="/demo" />
+      
     </div>;
 };
 export default AboutUs;

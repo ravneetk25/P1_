@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 import { Link } from 'react-router-dom';
 import { LinkedinIcon, TwitterIcon, MailIcon, PhoneIcon, MapPinIcon } from 'lucide-react';
 export const Footer = () => {
@@ -10,7 +10,7 @@ export const Footer = () => {
           <div className="col-span-1 md:col-span-1">
             <Link to="/" className="inline-block mb-4">
               <span className="text-xl font-bold bg-gradient-to-r from-[#29A8FF] to-[#6C63FF] text-transparent bg-clip-text font-montserrat">
-                Osto.one
+                Osto
               </span>
             </Link>
             <p className="text-[#B0B0B0] text-sm mb-4">
@@ -33,7 +33,7 @@ export const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="text-[#B0B0B0] hover:text-[#29A8FF] transition-colors text-sm">
-                  Features
+                  Home
                 </Link>
               </li>
               <li>
@@ -89,20 +89,20 @@ export const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MailIcon size={18} className="text-[#29A8FF] mr-2 mt-0.5" />
-                <a href="mailto:info@osto.one" className="text-[#B0B0B0] hover:text-[#29A8FF] transition-colors text-sm">
-                  info@osto.one
+                <a href="mailto:connect@osto.one" className="text-[#B0B0B0] hover:text-[#29A8FF] transition-colors text-sm">
+                  connect@osto.one
                 </a>
               </li>
               <li className="flex items-start">
                 <PhoneIcon size={18} className="text-[#29A8FF] mr-2 mt-0.5" />
-                <a href="tel:+11234567890" className="text-[#B0B0B0] hover:text-[#29A8FF] transition-colors text-sm">
-                  +1 (123) 456-7890
+                <a href="tel:+919119106555" className="text-[#B0B0B0] hover:text-[#29A8FF] transition-colors text-sm">
+                  +91 9119106555
                 </a>
               </li>
               <li className="flex items-start">
                 <MapPinIcon size={18} className="text-[#29A8FF] mr-2 mt-0.5" />
                 <span className="text-[#B0B0B0] text-sm">
-                  123 Security Ave, San Francisco, CA 94107
+                  307, Wing-B, Raj Arcade CHS Ltd, Mahavir Nagar, Maharashtra, 400067
                 </span>
               </li>
             </ul>
@@ -110,7 +110,7 @@ export const Footer = () => {
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-[#B0B0B0] text-sm">
-            &copy; {currentYear} Osto.one. All rights reserved.
+            &copy; {currentYear} Osto. All rights reserved.
           </p>
         </div>
       </div>

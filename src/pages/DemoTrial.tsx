@@ -221,7 +221,7 @@ const DemoTrial: React.FC = () => {
                         <div className="flex items-center pt-2">
                           <input type="checkbox" id="terms" className="mr-2" required />
                           <label htmlFor="terms" className="text-xs text-[#B0B0B0]">
-                            I agree to Osto.one's{' '}
+                            I agree to Osto's{' '}
                             <a href="#" className="text-[#29A8FF]">
                               Terms of Service
                             </a>{' '}
@@ -260,7 +260,7 @@ const DemoTrial: React.FC = () => {
             {/* Right Column - Benefits */}
             <div>
               <h2 className="text-2xl font-bold font-montserrat mb-6">
-                Why Choose Osto.one
+                Why Choose Osto
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start">
